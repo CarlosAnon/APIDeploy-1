@@ -1,0 +1,61 @@
+<section class="EspacioInventario">
+    <Section class="EspacioFormularioInventario">
+      
+      <a class="FraseIndumentaria" href="#">Indumentaria</a>
+      <ul class="FormularioDesplegable FormularioIndumentaria">
+        <li class="FormularioSubmenu FormularioBuzos"><a href="/CommonClothes/PagProdBuzos">Buzos</a></li>
+        <li class="FormularioSubmenu FormularioRemeras" ><a href="/CommonClothes/PagProdRemeras">Remeras</a></li>
+        <li class="FormularioSubmenu FormularioPantalones" ><a href="/CommonClothes/PagProdPantalones">Pantalones</a></li>
+        <li class="FormularioSubmenu FormularioZapatillas" ><a href="/CommonClothes/PagProdZapatillas">Zapatillas</a></li>
+      </ul> 
+      
+      <a class="FraseGenero" href="#">Genero</a>
+      <ul class="FormularioDesplegable FormularioGenero">
+        <li class="FormularioSubmenu FormularioHombre"><a href="#">Hombre</a></li>
+        <li class="FormularioSubmenu FormularioMujer"><a href="#">Mujer</a></li>
+      </ul>
+       
+      <a class="FraseTalle" href="#">Talle</a>
+      <ul class="FormularioDesplegable FormularioTalle">
+        <li class="FormularioSubmenu FormularioTalleS"><a href="#">Talle S</a></li>
+        <li class="FormularioSubmenu FormularioTalleM"><a href="#">Talle M</a></li>
+        <li class="FormularioSubmenu FormularioTalleL"><a href="#">Talle L</a></li>
+        <li class="FormularioSubmenu FormularioTalleXL"><a href="#">Talle XL</a></li>
+        <li class="FormularioSubmenu FormularioTalleXXL"><a href="#">Talle XXL</a></li>
+      </ul>
+     
+      
+      <a class="FraseColor" href="#">Color</a>
+      <ul class="FormularioDesplegable FormularioColor"> 
+        <li class="FormularioSubmenu FormularioMuestraColor1"><a href="#"></a></li>
+        <li class="FormularioSubmenu FormularioMuestraColor2"><a href="#"></a></li>
+        <li class="FormularioSubmenu FormularioMuestraColor3"><a href="#"></a></li>
+        <li class="FormularioSubmenu FormularioMuestraColor4"><a href="#"></a></li>
+        <li class="FormularioSubmenu FormularioMuestraColor5"><a href="#"></a></li>
+        <li class="FormularioSubmenu FormularioMuestraColor6"><a href="#"></a></li>
+        <li class="FormularioSubmenu FormularioMuestraColor7"><a href="#"></a></li>
+        <li class="FormularioSubmenu FormularioMuestraColor8"><a href="#"></a></li>
+      </ul>
+      
+      
+      <a class="FrasePrecio" href="#">Precio</a>
+      <ul class="FormularioDesplegable FormularioPrecio">
+        <li class="FormularioSubmenu FormularioPrecioMayorMenor"><a href="#">Mayor a Menor</a></li>
+        <li class="FormularioSubmenu FormularioPrecioMenorMayor"><a href="#">Menor a Mayor</a></li>
+      </ul>
+    </Section> 
+    <Section class="EspacioImagenesInventario">
+      
+      <% data.forEach((prod)=>{%>
+        <!-- cards categorias -->
+        <div class="card">
+            <img class="img-card" src="<%=prod.Imagen%>" alt="imagen=producto">
+            <p class="desc-card"><%= prod.Descripcion %> </p>    
+        </div>
+      <%})%>
+
+      <a class="AntPaginaInventario" href="">Anterior  </a>
+      <a class="SigPaginaInventario" href="">  Siguiente</a>
+    </Section>
+</div>
+  </section>

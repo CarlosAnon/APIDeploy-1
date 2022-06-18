@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%-include('../partials/head') %>
+    
+    <link rel="stylesheet" href="/css/StyleIndex2.css">
+    <title>Novedades</title>
+</head>
+
+<body>
+  <nav class="Navegador">
+    <%-include('../partials/nav') %>
+  </nav>
+
+  <%-include('../partials/desplegablesNav') %>
+  
+  <section>
+    <h1 class="FraseNovedades">NOVEDADES</h1>
+    
+    <div class="EspacioCardsNovedades">
+      <div class="RecuadroFraseYCard">
+        <h1 class="FraseCardNovedades LoQueSeViene">LO QUE SE VIENE</h1>
+        <div class="CardImagenNovedades">
+          <h1 class="FraseCardNovedades OTOÑO">OTOÑO</h1>
+          <img class="ImagenCardNovedades" src="/imagenes/OTOÑO2.jpg" alt="imagen=producto" >
+        </div>
+      </div>
+      <div class="RecuadroFraseYCard">
+        <h1 class="FraseCardNovedades EnOferta">EN OFERTA</h1>
+        <div class="CardImagenNovedades">
+          <img class="ImagenCardNovedades" src="/imagenes/DescuentosCard.png" alt="imagen=producto" >
+
+        </div>
+      </div> 
+      <div class="RecuadroFraseYCard">
+        <h1 class="FraseCardNovedades EventosYParticipaciones">EVENTOS Y PARTICIPACIONES</h1>
+        <div class="CardImagenNovedades">
+          <img class="ImagenCardNovedades" src="/imagenes/EventosImagen.jpg" alt="imagen=producto">
+        </div>
+      </div> 
+      <div class="RecuadroFraseYCard">
+        <h1 class="FraseCardNovedades TrabajosConAmigos">TRABAJOS CON AMIGOS</h1>
+        <div class="CardImagenNovedades">
+          <img class="ImagenCardNovedades" src="/imagenes/ImagenAmigos.jpg" alt="imagen=producto">
+        </div>
+      </div> 
+      <form method="POST" action="/CommonClothes/Novedades">
+        <div class="RecuadroSuscribiteInput">
+          <label for="correo" class="correoinput-label">Suscribite al Newsletter</label>
+          <input type="email" class="form-control" id="correo" name="correo" placeholder=" Correo Electronico">
+        
+          <button for="correo" type="submit" class="boton-agregar">Suscribirse</button>
+        </div>
+      </form> 
+      </div>
+    </div>
+    
+  </section>
+    
+    <%-include('../partials/footer') %>
+         
+          
+
+    <script src="Scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

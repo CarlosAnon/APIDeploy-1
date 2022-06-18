@@ -1,0 +1,446 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body{
+  background-color: rgb(230, 230, 229);
+  box-sizing: border-box;
+}
+
+                           /* Nav */
+.Navegador{
+  height: 110px;
+  width: 101%;
+  margin-top: -8px;
+  margin-left: -7px;
+  position: fixed;
+  z-index: 1;
+}
+.NavegadorSuperior {
+  height: 65px;
+  width: 100.1%;
+  background-color: rgb(233, 154, 6);  
+  display: inline-flex;
+  z-index: 1; /*Queda adelante de todo*/  
+}
+.LogoSuperior {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  display: flex;
+  margin-top: 7px;
+  margin-left: 30px;
+  background-color: grey;
+  opacity: 1;
+}
+.FraseLogoSuperior{
+  font-family: 'Mochiy Pop P One', sans-serif;
+  color: rgb(17, 14, 9);
+  display: flex;
+  inline-size: 10px; 
+  overflow-wrap: break-word; 
+  margin-top: 5px;
+  margin-left: 85px;
+}
+.NavegadorInferior {
+  height: 45px;
+  width: 100.1%;
+  margin-top: vh;
+  margin-left: px;
+  background-color: rgb(47, 47, 48);
+  z-index: 1; /*Queda adelante de todo*/
+  display: inline-flex;  
+  justify-content: space-evenly;
+}
+.hamburguesa{
+  height:45px;
+  width: 10px;
+  display: none;
+  position: absolute;
+  margin-left: -90%;
+}
+.LogoHamburguesa{
+  height: 33px;
+  width: 90px;
+  margin-top: 5px;
+}
+.DesplegablesNavegadorInferior {
+  height: 45px;
+  width: 150vw;
+  box-sizing: content-box;
+  flex-direction: row;
+  row-gap: 5%; 
+  margin-left: 30vw;
+  margin-top: 0px;
+  list-style: none;
+  background-color: rgb(237, 95, 95) solid 0px; 
+  justify-items: space-evenly; 
+}
+.RecuadroDesplegable {
+  height: 45px;
+  width: 150px;
+  padding-left: 0px;
+  list-style: none;
+  text-align:center;
+  box-sizing: content-box;
+  display: inline-flex;
+  flex-wrap: wrap;
+  border: 0px solid black;
+  justify-content: space-between;
+}
+.NavegadorProductos{
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: rgb(233, 154, 6);
+}
+.NavegadorNovedades{
+  color: rgb(233, 154, 6);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+.NavegadorSobreNosotros{
+  color: rgb(233, 154, 6);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+.RecuadroBuscador{
+  display: flex;
+  flex-direction: row;
+}
+.Buscador {
+  height: 25px;
+  width: 40vw;
+  display: inline-flex;
+  margin-left: 20vw;
+  margin-top: 25px;
+  border-style: hidden;
+  background-color: gainsboro;  
+}
+.BotonBuscar {
+  height: 25px;
+  width: 70px;
+  margin-top: 25px;
+  margin-left: 5px;
+  display: inline-flex; 
+  background-color: rgb(230, 205, 253);
+}
+.hamb_desplegable{
+  height: 150px;
+  width: 110px;
+  margin-top: 76px;
+  display: none;
+  position: fixed;
+  box-sizing: content-box;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgb(47, 47, 48);
+  color: rgb(233, 154, 6);
+  border: 2px  solid rgb(233, 154, 6);
+}
+.hamb_submenu{
+  color:white;
+  display: inline-flex;
+  margin-left: -10px;
+}
+.ListaDesplegableProductos{
+  height: 100px;
+  width: 560px;
+  margin-top: 78px;
+  margin-left: 20vw;
+  z-index: 1;
+  position: fixed; 
+  box-sizing: content-box;
+  justify-content: space-evenly;
+  display:none;  
+  /* display: grid;   */
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0px; 
+  border: 1px solid rgb(233, 154, 6);  
+}
+.Productos_submenu{
+  height: 100px;  
+  width: 150px;
+  margin-top: 0px;
+  margin-left: -13%;
+  /* display: none;    */
+  display: inline-flex;  
+  flex-direction: column;
+  list-style: none;
+  font-size: 15px;
+  background-color: rgb(47, 47, 48);
+}
+                /* Body */
+
+.Espacio1{
+  height: 110px;
+  display: flex;
+  position: relative;  
+}
+.TextoPaginaActual{
+  font-size: 0.8rem;
+  margin-top: 0px;  
+}
+.EspacioInventario{
+  height: 100%;
+  width: 100%;
+  margin-left: 1vw;
+  background-color: rgb(230, 230, 229);   
+  display: flex;  
+}
+                      /* Formulario */
+.EspacioFormularioInventario{
+  height: 700px;
+  width: 175px;
+  font-size: 1.2rem;
+  font-weight: 600;  
+}
+.FormularioDesplegable{
+  margin-left: -25px;
+}
+.FormularioSubmenu{
+  width: 100%;
+  margin-left: 1vw;
+  font-size: 1rem;
+  list-style: none;
+}
+.FraseGenero{
+  margin-left:0%;
+}
+.EspacioMuestraTalle{
+  height: 180px;
+  width: 148px;
+  margin-left: -15px;
+}
+.FormularioTalle34{
+  height:25px;
+  width: 35px;
+  display: inline-flex;
+  flex-direction: row;
+  border: 0.2px solid black;
+}
+.FormularioTalle35{
+  height:25px;
+  width: 35px;
+  display: inline-flex;
+  flex-direction: row;
+  border: 0.2px solid black;
+}
+.FormularioTalle36{
+  height:25px;
+  width: 35px;
+  display: inline-flex;
+  flex-direction: row;
+  border: 0.2px solid black;
+}
+.FormularioTalle37{
+  height:25px;
+  width: 35px;
+  display: inline-flex;
+  flex-direction: row;
+  border: 0.2px solid black;
+}
+.FormularioTalle38{
+  height:25px;
+  width: 35px;
+  display: inline-flex;
+  flex-direction: row;
+  border: 0.2px solid black;
+}
+.FormularioTalle39{
+  height:25px;
+  width: 35px;
+  display: inline-flex;
+  flex-direction: row;
+  border: 0.2px solid black;
+}
+.FormularioTalle40{
+  height:25px;
+  width: 35px;
+  display: inline-flex;
+  flex-direction: row;
+  border: 0.2px solid black;
+}
+.FormularioTalle41{
+  height:25px;
+  width: 35px;
+  display: inline-flex;
+  flex-direction: row;
+  border: 0.2px solid black;
+}
+.FormularioTalle42{
+  height:25px;
+  width: 35px;
+  display: inline-flex;
+  flex-direction: row;
+  border: 0.2px solid black;
+}
+.FormularioTalle43{
+  height:25px;
+  width: 35px;
+  display: inline-flex;
+  flex-direction: row;
+  border: 0.2px solid black;
+}
+.FormularioTalle44{
+  height:25px;
+  width: 35px;
+  display: inline-flex;
+  flex-direction: row;
+  border: 0.2px solid black;
+}
+.FraseColor{
+  margin-left:0%;
+}
+.FormularioColor{
+  height: 60px;
+  width: 175px;
+  margin-left: -15%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  
+}
+.FormularioMuestraColor1{
+  height: 20px;
+  width: 20px;
+  border: 0.7px solid black;
+  background-color: white;
+}
+.FormularioMuestraColor2{
+  height: 20px;
+  width: 20px;
+  border: 0.7px solid black;
+  background-color: grey;
+}
+.FormularioMuestraColor3{
+  height: 20px;
+  width: 20px;
+  border: 0.7px solid black;
+  background-color: black;
+}
+.FormularioMuestraColor4{
+  height: 20px;
+  width: 20px;
+  border: 0.7px solid black;
+  background-color: blue;
+}
+.FormularioMuestraColor5{
+  height: 20px;
+  width: 20px;
+  border: 0.7px solid black;
+  background-color: red;
+}
+.FormularioMuestraColor6{
+  height: 20px;
+  width: 20px;
+  border: 0.7px solid black;
+  background-color: green;
+}
+.FormularioMuestraColor7{
+  height: 20px;
+  width: 20px;
+  border: 0.7px solid black;
+  background-color: yellow;
+}
+.FormularioMuestraColor8{
+  height: 20px;
+  width: 20px;
+  border: 0.7px solid black;
+  background-color: rgb(252, 22, 202);
+}
+
+                       /* Cards */
+.EspacioImagenesInventario{
+  width: 800px;
+  margin-left: 25px;
+  gap: 25px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  background-color: rgb(230, 230, 229);   
+}
+.card{
+  height: 300px;
+  width: 250px;
+  border: 2px solid #A0D3A5;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;  
+} 
+.card2{
+  height: 250px;
+  width: 300px;
+  border: 2px solid #A0D3A5;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;  
+} 
+.desc-card{
+   width: 90%;
+   text-align: center;
+   height: 30px;
+}
+.img-card{
+  width: 100%;
+}
+.img-card2{
+  height:100%;
+  width: 100%;
+}
+.AntPaginaInventario{
+  margin-left: 40%;    
+  text-decoration-line: none;
+}
+.SigPaginaInventario{
+  text-decoration-line: none;  
+}
+                          /* Footer */
+
+.PieDePagina{
+  height: 180px;
+  width: 100%;
+  margin-left:0vw;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgba(47, 47, 48, 0.919);
+}
+.RecuadrosFooter{
+  height: 180px;
+  width: 100%;
+  margin: 0vw 0vw 0vw 2vw;
+  display:inline-flex;
+  flex-direction: column;
+}
+.Footer1{
+  font-size: 2vw;
+  display:flex;
+  flex-direction: column;
+  color: white;
+  margin-left: 2vw;  
+}
+.Footer2{  
+  margin-left: -70px;
+  margin-left: 0vw;
+  font-size: 1.5vw;
+  color: rgb(253, 138, 61);
+}  
+@media (max-width:768px){
+    .DesplegablesNavegadorInferior{
+      display: none;
+    }  
+    .hamburguesa {
+      display: block;
+    }
+    #hamb:checked + .hamb_desplegable{
+      display:flex;
+    }
+    .ListaDesplegableProductos{
+      display:none;
+    }
+    .Productos_submenu_sexo{
+      display:none;
+    }
+}
