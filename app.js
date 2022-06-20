@@ -38,6 +38,7 @@ app.use("/PagProdZapatillas",routes);
 app.use("/posts", require("../Posts/postsRoute"));
 
 
+
 app.listen(3000,()=>{
     console.log("Server corriendo en puerto 3000")
 });
